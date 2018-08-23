@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "book")
+@Table(name = "person")
 public class Person {
 
 	private static final long serialVersionUID = 1L;
@@ -26,18 +26,18 @@ public class Person {
 	@Column(name = "sex")
 	private String sex;
 	
-	@Column(name = "language")
-	private String language;
+//	@Column(name = "language")
+//	private String language;
+//	
+//	@Column(name = "relation")
+//	private String relationStatus;
+//	
+//	@Column(name = "education")
+//	private String educationLevel;
 	
-	@Column(name = "relation")
-	private String relationStatus;
-	
-	@Column(name = "education")
-	private String educationLevel;
-	
-	@Column(name = "colonouscopystatus")
+/*	@Column(name = "colonouscopystatus")
 	private boolean colonoscopyStatus;
-
+*/
 	public long getId() {
 		return id;
 	}
@@ -70,7 +70,7 @@ public class Person {
 		this.sex = sex;
 	}
 
-	public String getLanguage() {
+/*	public String getLanguage() {
 		return language;
 	}
 
@@ -94,13 +94,13 @@ public class Person {
 		this.educationLevel = educationLevel;
 	}
 
-	public boolean isColonoscopyStatus() {
+*//*	public boolean isColonoscopyStatus() {
 		return colonoscopyStatus;
 	}
 
 	public void setColonoscopyStatus(boolean colonoscopyStatus) {
 		this.colonoscopyStatus = colonoscopyStatus;
-	}
+	}*/
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
@@ -108,11 +108,9 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", fName=" + fName + ", yearOfBirth=" + yearOfBirth + ", sex=" + sex + ", language="
-				+ language + ", relationStatus=" + relationStatus + ", educationLevel=" + educationLevel
-				+ ", colonoscopyStatus=" + colonoscopyStatus + "]";
+		return "Person [id=" + id + ", fName=" + fName + ", yearOfBirth=" + yearOfBirth + ", sex=" + sex + "]";
 	}
-	
+
 	
 	
 	
