@@ -37,12 +37,14 @@ public class PersonController {
 		Iterable<Person> customers = personRepository.findAll();
 
 		customers.forEach(list::add);
+		
+		System.out.println("after for loop");
 		return list;
 	}
 
 	@PostMapping("/persons/create")
 	public Person createPerson(@Valid @RequestBody Person person) {
-		System.out.println("Create Person: " + person.getfName() + "...");
+		System.out.println("Create Person: " + person.getName() + "...");
 
 		return personRepository.save(person);
 	}

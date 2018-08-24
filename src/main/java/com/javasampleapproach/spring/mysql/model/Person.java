@@ -18,10 +18,10 @@ public class Person {
 	private long id;
 
 	@Column(name = "Name")
-	private String fName;
+	private String name;
 	
 	@Column(name = "year")
-	private String yearOfBirth;
+	private String year;
 	
 	@Column(name = "sex")
 	private String sex;
@@ -46,22 +46,6 @@ public class Person {
 		this.id = id;
 	}
 
-	public String getfName() {
-		return fName;
-	}
-
-	public void setfName(String fName) {
-		this.fName = fName;
-	}
-
-	public String getYearOfBirth() {
-		return yearOfBirth;
-	}
-
-	public void setYearOfBirth(String yearOfBirth) {
-		this.yearOfBirth = yearOfBirth;
-	}
-
 	public String getSex() {
 		return sex;
 	}
@@ -70,46 +54,27 @@ public class Person {
 		this.sex = sex;
 	}
 
-/*	public String getLanguage() {
-		return language;
+	public String getName() {
+		return name;
 	}
 
-	public void setLanguage(String language) {
-		this.language = language;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getRelationStatus() {
-		return relationStatus;
+	public String getYear() {
+		return year;
 	}
 
-	public void setRelationStatus(String relationStatus) {
-		this.relationStatus = relationStatus;
-	}
-
-	public String getEducationLevel() {
-		return educationLevel;
-	}
-
-	public void setEducationLevel(String educationLevel) {
-		this.educationLevel = educationLevel;
-	}
-
-*//*	public boolean isColonoscopyStatus() {
-		return colonoscopyStatus;
-	}
-
-	public void setColonoscopyStatus(boolean colonoscopyStatus) {
-		this.colonoscopyStatus = colonoscopyStatus;
-	}*/
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public void setYear(String year) {
+		this.year = year;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", fName=" + fName + ", yearOfBirth=" + yearOfBirth + ", sex=" + sex + "]";
+		return "Person [id=" + id + ", name=" + name + ", year=" + year + ", sex=" + sex + "]";
 	}
+
 
 	
 	
