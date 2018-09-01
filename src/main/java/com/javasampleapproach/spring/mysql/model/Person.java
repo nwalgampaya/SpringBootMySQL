@@ -26,6 +26,21 @@ public class Person {
 	@Column(name = "sex")
 	private String sex;
 	
+	@Column(name = "country")
+	private String country	;
+	
+	@Column(name = "language")
+	private String language	;
+	
+	@Column(name = "relation")
+	private String relation	;
+
+	@Column(name = "education")
+	private String education;
+	
+
+
+	
 //	@Column(name = "language")
 //	private String language;
 //	
@@ -68,6 +83,39 @@ public class Person {
 
 	public void setYear(String year) {
 		this.year = year;
+	}
+	
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getRelation() {
+		return relation;
+	}
+
+	public void setRelation(String relation) {
+		this.relation = relation;
+	}
+
+	public String getEducation() {
+		return education;
+	}
+
+	public void setEducation(String education) {
+		this.education = education;
 	}
 
 	@Override
