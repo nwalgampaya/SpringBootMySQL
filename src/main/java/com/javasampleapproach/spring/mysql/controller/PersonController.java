@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javasampleapproach.spring.mysql.model.Person;
 import com.javasampleapproach.spring.mysql.repo.PersonRepository;
 
+//@CrossOrigin(origins = "http://localhost:8081")
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api")
