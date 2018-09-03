@@ -38,6 +38,8 @@ public class Person {
 	@Column(name = "education")
 	private String education;
 	
+	@Column(name = "colonoscopy")
+	private String colonoscopy;
 
 
 	
@@ -118,10 +120,22 @@ public class Person {
 		this.education = education;
 	}
 
+	public String getColonoscopy() {
+		return colonoscopy;
+	}
+
+	public void setColonoscopy(String colonoscopy) {
+		this.colonoscopy = colonoscopy;
+	}
+
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", year=" + year + ", sex=" + sex + "]";
+		return "Person [id=" + id + ", name=" + name + ", year=" + year + ", sex=" + sex + ", country=" + country
+				+ ", language=" + language + ", relation=" + relation + ", education=" + education
+				+ ", colonoscopy=" + colonoscopy+ "]";
 	}
+
+	
 
 
 	
