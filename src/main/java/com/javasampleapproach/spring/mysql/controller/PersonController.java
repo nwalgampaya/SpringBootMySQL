@@ -30,6 +30,39 @@ public class PersonController {
 	@Autowired
 	PersonRepository personRepository;
 	
+//	@GetMapping("/persons")
+    public ArrayList<String>  createArray() {
+    	ArrayList<String> profession = new ArrayList<>();
+    	
+//    	StringBuffer doctor = "" + ""{ name: 'company1', jobs: ['job1-1', 'job1-2', 'job1-3'] } ;
+    	String doctors =new String();
+    	String nurse =new String();
+    	doctors = doctors.concat("{"
+  			+ "name: "
+  			+ "'company1', "
+  			+ "jobs: ['job1-1', "
+  			+ "'job1-2', "
+  			+ "'job1-3'] "
+  			+ "}");
+    	nurse = nurse.concat("{"
+      			+ "name: "
+      			+ "'company1', "
+      			+ "jobs: ['job1-1', "
+      			+ "'job1-2', "
+      			+ "'job1-3'] "
+      			+ "}");
+//    	String doctors = "{ name: 'company1', jobs: ['job1-1', 'job1-2', 'job1-3'] } ".toString();
+//    	String nurse=    "{ name: 'company2', jobs: ['job2-1', 'job2-2', 'job2-3'] }".toString() ;
+    	profession.add(doctors);
+    	profession.add(nurse);
+    	
+//    	for (String string : profession) {
+//			
+//    		System.out.println(string);
+//		}
+    	return profession;
+    }
+	
 	@GetMapping("/persons")
 	public List<Person> getAllPersons() {
 		System.out.println("Get all Persons...");
