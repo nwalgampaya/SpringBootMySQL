@@ -24,7 +24,7 @@ public class PractitionerController {
 
 	@GetMapping("/practitioners")
 	public List<Practitioner> getAllPractitioners() {
-		System.out.println("Get all Persons...");
+		System.out.println("Get all Practitioners...");
 
 		List<Practitioner> list = new ArrayList<>();
 		Iterable<Practitioner> practitioner = practitionerRepository.findAll();

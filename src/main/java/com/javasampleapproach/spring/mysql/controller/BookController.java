@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javasampleapproach.spring.mysql.model.Book;
 import com.javasampleapproach.spring.mysql.repo.BookRepository;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api")
 public class BookController {
